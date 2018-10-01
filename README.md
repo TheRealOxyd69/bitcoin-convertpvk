@@ -1,4 +1,4 @@
-# bitcoin-convertpvk
+# Rekel-convertpvk
 This tool converts your extended private key to the usual wallet import format (WIF).
 The tool is simple and lightweight.
 
