@@ -4,8 +4,8 @@ import binascii, hashlib, base58, argparse
 def convert(z):
     # Step 1: get the privatekey in extended format, this is hexadecimal upper or lower case.
     private_key_static = z
-    # Step 2: adding 80 in the front for select de MAINNET channel bitcoin address
-    extended_key = "80"+private_key_static
+    # Step 2: adding 38 in the front for select de MAINNET channel Rekel address
+    extended_key = "38"+private_key_static
     # Step 3: first process SHA-256
     first_sha256 = hashlib.sha256(binascii.unhexlify(extended_key)).hexdigest()
     # Step 4: second process SHA-256
